@@ -13,29 +13,37 @@
     <div class="terminal-glitch">
         <div class="container">
             <div class="title">SYSTEM ACCESS</div>
-            <form action="adhi.php" method="post" onsubmit="return validateForm()">
-                <div class="user_details">
-                    <div class="input_box">
-                        <span class="details">USERNAME</span>
-                        <input type="text" placeholder="Enter your alias" name="username" required>
+                <form action="register.php" method="POST" onsubmit="return validateForm()">
+                    <div class="user_details">
+                        <div class="input_pox">
+                            <span class="details">First Name</span>
+                            <input type="text" placeholder="Enter your first name" name="firstName" required>
+                        </div>
+                        <div class="input_pox">
+                            <span class="details">Last Name</span>
+                            <input type="text" placeholder="Enter your last name" name="lastName" required>
+                        </div>
+                        <div class="input_pox">
+                            <span class="details">Email</span>
+                            <input type="email" placeholder="Enter your email" name="email" required>
+                        </div>
+                        <div class="input_pox">
+                            <span class="details">Phone Number</span>
+                            <input type="text" placeholder="Enter your phone number" name="phoneNumber" required>
+                        </div>
+                        <div class="input_pox">
+                            <span class="details">Password</span>
+                            <input type="password" placeholder="Enter your password" name="password" required>
+                        </div>
+                        <div class="input_pox">
+                            <span class="details">Confirm Password</span>
+                            <input type="password" placeholder="Confirm your password" name="confirmPassword" required>
+                        </div>
                     </div>
-                    <div class="input_box">
-                        <span class="details">EMAIL</span>
-                        <input type="email" placeholder="Enter your email" name="email" required>
+                    <div class="button">
+                        <input type="submit" value="Register">
                     </div>
-                    <div class="input_box">
-                        <span class="details">PASSWORD</span>
-                        <input type="password" placeholder="Enter password" name="password" required>
-                    </div>
-                    <div class="input_box">
-                        <span class="details">CONFIRM PASSWORD</span>
-                        <input type="password" placeholder="Confirm password" name="confirmPassword" required>
-                    </div>
-                </div>
-                <div class="button">
-                    <input type="submit" value="LOGIN">
-                </div>
-            </form>
+                </form>
         </div>
     </div>
 </body>
