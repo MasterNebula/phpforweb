@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hacker Registration</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+    <div class="terminal-glitch">
+        <div class="container">
+            <div class="title">SYSTEM ACCESS</div>
+            <form action="adhi.php" method="post" onsubmit="return validateForm()">
+                <div class="user_details">
+                    <div class="input_box">
+                        <span class="details">USERNAME</span>
+                        <input type="text" placeholder="Enter your alias" name="username" required>
+                    </div>
+                    <div class="input_box">
+                        <span class="details">EMAIL</span>
+                        <input type="email" placeholder="Enter your email" name="email" required>
+                    </div>
+                    <div class="input_box">
+                        <span class="details">PASSWORD</span>
+                        <input type="password" placeholder="Enter password" name="password" required>
+                    </div>
+                    <div class="input_box">
+                        <span class="details">CONFIRM PASSWORD</span>
+                        <input type="password" placeholder="Confirm password" name="confirmPassword" required>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="LOGIN">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
